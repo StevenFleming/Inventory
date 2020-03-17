@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Inventory.Models;
+@model List<Inventory.Models.Collection>;
+
+<h1>Collections</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No collections have been added yet!</h3>
+} 
+
+@foreach (Collection collection in Model)
+{
+  <li>@Html.ActionLink($"{collection.Type}", "Details", new { id = collection.CollectionId })</li>
+}
+
+<p>@Html.ActionLink("Add new collection", "Create")</p>
+
+<p>@Html.ActionLink("Home", "Index", "Home")</p>

@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Inventory.Models.Collection
+
+<h4>Add a new collection</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Type)
+    @Html.TextBoxFor(model => model.Type)
+
+    @Html.LabelFor(model => model.Contents)
+    @Html.TextBoxFor(model => model.Contents)
+
+    <input type="submit" value="Add new collection" class="btn btn-default" />
+}
+<p>@Html.ActionLink("Show all collections", "Index")</p>

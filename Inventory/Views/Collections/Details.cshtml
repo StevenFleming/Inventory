@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Inventory.Models.Collection
+
+<h2>Collection Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(model => model.Type)</h3>
+<h4>@Html.DisplayNameFor(model => model.Contents): @Html.DisplayFor(model => model.Contents)</h4>
+
+<p>@Html.ActionLink("Back to collections", "Index")</p>
