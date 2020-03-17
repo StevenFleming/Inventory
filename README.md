@@ -1,10 +1,6 @@
 # Inventory Tracker
 
-![LastCommit](https://img.shields.io/github/last-commit/seschwartz8/Inventory.Solution)
-![Languages](https://img.shields.io/github/languages/top/seschwartz8/Inventory.Solution)
-![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)
-
-#### SHORT DESCRIPTION
+#### C#/.NET MVC website utilizing MySQL Workbench to track inventory. Current version: 03.17.20
 
 #### By Sarah "Sasa" Schwartz, Steven Fleming
 
@@ -23,7 +19,13 @@
 
 ## Description
 
-DESCRIPTION
+C#/.NET MVC website utilizing MySQL Workbench to track inventory. This application allows you to create collections and then view all of your collections. Each collection instance is stored in a database.
+
+## WHAT WE WORKED ON 03.17.20
+- Animal shelter project
+- Spent a long portion of the day trouble shooting how to auto-generate timestamps and then display them in views
+- Spent a while researching foreign keys and designing a database structure for objects within objects (e.g. if we stored items in each of these collections)
+- Completed a simple version of Inventory project
 
 ## Installation Requirements
 
